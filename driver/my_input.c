@@ -114,13 +114,7 @@ static void __exit buttons_exit(void)
 	input_free_device(buttons_dev);
 }
 
-module_init(buttons_init);
 
-module_exit(buttons_exit);
-MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Phil Blundell <pb@handhelds.org>");
-MODULE_DESCRIPTION("Keyboard driver for GPIOs");
-MODULE_ALIAS("platform:gpio-keys");
 
 
 
